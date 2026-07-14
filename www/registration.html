@@ -1,0 +1,101 @@
+<html>
+<head>
+    <!-- Встановлюємо метадані для коректного відображення та масштабування на мобільних пристроях -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        /* Загальні стилі для всього документа */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(../img/mlechnyj_put_zvezdy_zvezdnoe_nebo_1030077_1920x1080.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Стилі для форми реєстрації */
+        form {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: inset 0 0 29px -8px rgba(51, 0, 102, 1);
+            width: 400px;
+        }
+
+        /* Стилі для заголовка форми */
+        h2 {
+            text-align: center;
+        }
+
+        /* Стилі для міток (лейблів) форми */
+        label {
+            display: block;
+            margin-block-start: 14px;
+        }
+
+        /* Стилі для полів введення форми */
+        input[type="username"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Стилі для кнопки "Зареєструватися" */
+        input[type="submit"] {
+            background-color: #352A52;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* Стилі для кнопки "Зареєструватися" при наведенні */
+        input[type="submit"]:hover {
+            transition: background-color 0.3s;
+            background-color: #6E76B7;
+        }
+
+    </style>
+</head>
+<body>
+<!-- Форма для реєстрації користувача -->
+<form action="Main.html" method="post" id="registrationForm">
+    <!-- Заголовок форми -->
+    <h2>Реєстрація</h2>
+    <!-- Мітка та поле введення для імені -->
+    <label for="username">Ім'я</label>
+    <input type="username" id="username" name="username" placeholder="" required>
+
+    <!-- Мітка та поле введення для Email -->
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com"  required>
+
+    <!-- Мітка та поле введення для пароля -->
+    <label for="password">Пароль</label>
+    <input type="password" id="password" name="password" placeholder="Не менше 8 символів" required>
+
+    <!-- Мітка та поле введення для дати народження -->
+    <label for="birthdate">Дата народження</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+
+    <!-- Кнопка "Зареєструватися" -->
+    <input type="submit" value="Зареєструватися">
+</form>
+</body>
+</html>

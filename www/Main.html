@@ -1,0 +1,238 @@
+ <html>
+       <head>
+        <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Головна</title>
+    <style>
+    body {
+            margin: 0; /* Встановлення зовнішніх відступів для тіла сторінки */
+            padding: 0; /* Встановлення внутрішніх відступів для тіла сторінки */
+            position: relative;
+             min-height: 100vh;
+
+   }
+         header{
+             text-align: center;                                  /* Вирівнювання тексту заголовка по центру */
+             background: url(../img/фон1.jpg); /* Фонове зображення */
+             background-size: cover;                              /* Розмір фонового зображення, щоб воно займало всю площу */
+             color: #FFFFFF;                                      /* Колір тексту */
+             font-size: 16;
+    }
+
+                .registration-button {
+    margin-left: 65px;
+    color: #FFFFFF; /* Колір тексту кнопки */
+    padding: 10px 20px; /* Відступи всередині кнопки */
+    border: none; /* Відсутність рамки */
+    border-radius: 5px; /* Закруглення кутів */
+    cursor: pointer; /* Курсор при наведенні */
+    transition: background-color 0.3s; /* Анімація зміни кольору фону */
+          padding: 0;       /* Встановлюємо внутрішні відступи для списку */
+
+
+     }
+
+            .registration-button:hover {
+    background-color: #6E76B7; /* Колір фону кнопки при наведенні */
+}
+
+
+
+     nav ul {
+           list-style: none; /* Встановлюємо властивість, яка видаляє маркери списку */
+
+            }
+
+            nav ul li {
+            display: inline;         /* Встановлюємо блочний вигляд для пунктів списку */
+            padding: 0 10px;         /* Встановлюємо внутрішні відступи для пунктів списку */
+            position: relative;      /* Встановлюємо позиціонування для пунктів списку */
+        }
+         /* Змінюємо колір фону пункта списку при наведенні */
+        nav ul li:hover {
+            background-color: #888;
+        }
+
+        nav ul li ul {
+            display: none;          /* Початково ховаємо підменю */
+            position: absolute;
+            background-color: #333; /* Встановлюємо колір фону підменю */
+            padding: 5px 0;         /* Встановлюємо внутрішні відступи для підменю */
+            left: 0;               /* Змінено з -40px на 0 */
+            top: 100%;             /* Змінено з 0 на 100% */
+        }
+
+        nav ul li:hover ul {
+            display: block; /* Встановлюємо відображення підменю */
+        }
+
+        nav ul li ul li {
+            display: block;/* Встановлюємо блочний вигляд для пунктів підменю */
+        }
+
+        nav ul li ul li a {
+           display: block;        /* Встановлюємо блочний вигляд для посилань у підменю */
+           padding: 5px 10px;     /* Встановлюємо внутрішні відступи для посилань у підменю */
+           color: #FFFFFF;        /* Встановлюємо колір тексту для посилань у підменю */
+           text-decoration: none; /* Встановлюємо відсутність підкреслення для посилань у підменю */
+        }
+
+
+      img#logo {
+            width: 100px;             /* Задаємо ширину першого зображення */
+            margin: 40px 0px 0px 0px; /* Зовнішні відступи зображення */
+        }
+
+         img#planet {
+            width: 500px;
+            margin: 20px 0px 0px 50px; /* Зовнішні відступи зображення */
+
+            }
+                  img#PSO {
+            width: 500px;              /* Задаємо ширину другого зображення */
+            margin: 50px 0px 0px 50px; /* Зовнішні відступи зображення */
+
+            }
+         a{
+             color: #FFFFFF;                          /* Колір тексту посилань */
+             padding: 20px;                           /* Внутрішні відступи посилань */
+             text-decoration: none;                   /* Відсутність підкреслення посилань */
+             font-family: Tahoma, Geneva, sans-serif  /* Шрифт посилань */
+         }
+         h1{
+             font-size: 50px; /* Розмір шрифту заголовка */
+
+         }
+
+         h3{
+             font-size: 20px;   /* Розмір шрифту заголовка */
+             text-transform: uppercase;    /* Перетворює текст на велекі літери */
+             text-align: center;
+
+         }
+
+         ul{
+              background: rgba(0,0,0,0.5);  /* Фоновий колір списку з прозорістю */
+
+        }
+
+           article{
+                max-width: 600px;    /* Максимальна ширина статті */
+                padding: 20px;       /* Внутрішні відступи статті */
+                margin: 0 auto;       /* Автоматичні бічні відступи статті для центрування */
+
+           }
+
+           p{
+             text-align: justify; /* Вирівнювання тексту абзацу по ширині */
+             font-size: 18px;      /* Розмір шрифту  */
+
+           }
+
+         button {
+                   background-color: #352A52; /* Колір фону */
+                   color: #fff;               /* Колір тексту */
+                   border: none;              /* Відсутність рамки */
+                   padding: 10px 20px;        /* Відступи всередині кнопки */
+                   border-radius: 5px;        /* Закруглення кутів */
+                   cursor: pointer;           /* Курсор при наведенні */
+                   transition: background-color 0.3s;
+         }
+
+            button:hover {
+            background-color: #6E76B7;        /* Колір фону кнопки при наведенні */
+             }
+
+        footer {
+            background-color: #251D2C; /* Колір фону нижнього колонтитула */
+            color: #fff;               /* Колір тексту в нижньому колонтитулі */
+            padding: 20px;             /* Встановлюємо внутрішні відступи */
+            position: absolute;         /* Вирівнюємо текст по центру */
+            width:  100%;              /*  ширина 100% */
+            bottom: 0px;             /* Збільшуємо відстань між кінцем основного вмісту і початком підвалу */
+             left: 0;
+             transition: transform 0.3s ease-out; /* Анімація для згортання */
+             transform: translateY(100%); /* Початкове згортання підвалу */
+
+       }
+       footer p {
+       display: inline;
+}
+ address {
+     font-size: 12;
+ }
+
+    </style>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="../img/logo1.png"  alt="Логотип">
+            <h1>SpacePortal</h1>
+       <nav>                                    <!-- Навігація -->
+       <ul>
+
+
+         <li><a href="Main.html">Головна</a></li>     <!-- Посилання на головну сторінку -->
+              <li>
+                    <a href="#">Сузір'я</a>
+                <ul>                        <!--Створення Підпунктів для "Сузір'я" -->
+                    <li><a href="big dipper.html">Велика Ведмедиця</a></li>
+                    <li><a href="orion.html">Оріон</a></li>
+                </ul>
+              </li>
+            <li>
+                <a href="#">Сонячна система</a>
+                <ul>                            <!--Створення Підпунктів для "Галактики" -->
+                    <li><a href="planet.html">Планети</a></li>
+                </ul>
+            </li>
+            <li>                                  <!--Створення Підпунктів для "Космічні об'єкти" -->
+                <a href="#">Небесні тіла</a>
+                <ul>
+                    <li><a href="black holes.html">Чорні діри</a></li>
+                </ul>
+            </li>
+            <a href="registration.html" class="registration-button">Реєстрація</a>
+        </ul>
+
+    </nav>
+
+        </header>
+
+  <article>
+   <img id="Planet" src="../img/Вигляд молодих планет.jfif"
+             alt="Вигляд молодих планет" />
+   <h3>Вчені встановили, як насправді виглядають молоді планети</h3>
+   <hr>
+   <p>Британські дослідники за допомогою комп'ютерних симуляцій змоделювали формування планет та виявили, як вони насправді виглядають на початку свого існування.</p>
+
+   <button class="read-more-btn">
+       <a href="molodi planeti.html">Читати далі...</a>
+   </button>  <!-- Кнопка  -->
+
+   <img id="PSO" src="../img/PSO J318.5-22.jpg"
+         alt="У космосі виявлено мандруючу планету" />
+
+   <h3>У космосі виявлено мандруючу планету</h3>
+   <hr>
+   <p>У журналі Astrophysical Journal Letters опублікована інформація з описом досить рідкісного
+      відкриття - знайдена планета PSO J318.5-22, яка вільно летить у відкритому космосі.
+      Вчені поки що не можуть дати відповідь на питання, звідки взялася ця планета і куди зникла її зірка.</p>
+
+   <button class="read-more-btn">
+       <a href="PSO J318.5-22.html">Читати далі...</a>
+   </button>  <!-- Кнопка  -->
+
+</article>
+
+       <footer>
+          <p>&copy; 2024 Мій перший сайт.
+              <address>
+                       Телефон: (380) 000-0000<br>
+                       Email: spaceportal@gmail.com
+
+             </address>
+          </p>
+    </footer>
+ </body>
+</html>
